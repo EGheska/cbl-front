@@ -12,6 +12,15 @@
     margin-top: 50px;
     max-width: 45%;
     box-shadow: 0px 2px 4px #4E4E4E;
+    background-color: transparent;
+}
+
+.contentHeader {
+    font-size: 40px;
+}
+
+.contentName {
+    font-size: 60px;
 }
 
 .emptyLine {
