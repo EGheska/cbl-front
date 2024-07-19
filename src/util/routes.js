@@ -1,17 +1,17 @@
 import { HOME_ROUTE } from "./const";
 import { ABOUT_ROUTE } from "./const";
 
-import TitleScreen from "../pages/titlescreen";
-import StartPage from "../pages/startpage";
+import TitleScreen from "../pages/titlescreen.js";
+import StartPage from "../pages/startpage.js";
 
 
 export const routes = [
     {
         path: HOME_ROUTE,
-        component: TitleScreen
+        Component: TitleScreen
     },
     {
         path: ABOUT_ROUTE,
-        component: StartPage
+        Component: StartPage
     },
 ]; 

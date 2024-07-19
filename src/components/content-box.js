@@ -3,9 +3,8 @@ import "../styles/content-box.css";
 import { Button } from "@mui/material";
 import { Checkbox } from "@mui/material";
 import { FormControlLabel } from "@mui/material";
-import { hover } from "@testing-library/user-event/dist/hover";
 
-const ContentBox = () => {
+const ContentBox = ({onButtonClick}) => {
     return (
         <div className="contentBox">
             <div className="contentHeader">
@@ -58,7 +57,7 @@ const ContentBox = () => {
             <div className="checkboxContent">
                 <FormControlLabel control={<Checkbox />} label="I have read and understood the information provided above." />
             </div>
-            <Button
+            <Button onClick={onButtonClick}
                 sx={{
                     backgroundColor: "#CEFFA7",
                     color: "#000000",
