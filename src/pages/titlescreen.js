@@ -3,7 +3,6 @@ import "../styles/titlescreen.css";
 import ContentBox from "../components/content-box";
 
 const TitleScreen = () => {
-
     return (
         <div className="titleScreen">
             <ContentBox />

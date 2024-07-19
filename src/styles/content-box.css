@@ -101,3 +101,9 @@
     margin-left: 6%;
     font-size: 18px;
 }
+
+.checkboxContent {
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: -2%;
+}

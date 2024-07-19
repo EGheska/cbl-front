@@ -3,6 +3,7 @@ import "../styles/content-box.css";
 import { Button } from "@mui/material";
 import { Checkbox } from "@mui/material";
 import { FormControlLabel } from "@mui/material";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 const ContentBox = () => {
     return (
@@ -65,6 +66,10 @@ const ContentBox = () => {
                     height: "50px",
                     alignSelf: "center",
                     fontSize: "20px",
+                    margin: "5%",
+                    '&:hover': {
+                        backgroundColor: "#CEFFA7",
+                    },
                 }} 
                 variant="contained">
                 Start
