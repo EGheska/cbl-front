@@ -19,7 +19,7 @@ function App() {
           <Route key={path} path={path} element={<Component />} />
         ))}
       </Routes>
-      <div className='footer'></div>
+      {/* <div className='footer'></div> */}
     </div>
     </Router>
   )

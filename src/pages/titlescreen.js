@@ -2,14 +2,14 @@ import React from "react";
 import "../styles/titlescreen.css";
 import ContentBox from "../components/content-box";
 import { useNavigate } from "react-router-dom";
-import { ABOUT_ROUTE } from "../util/const.js";
+import { START_ROUTE } from "../util/const.js";
 
 const TitleScreen = () => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
         console.warn("Navigating to about page");
-        navigate(ABOUT_ROUTE);
+        navigate(START_ROUTE);
     }
 
     return (

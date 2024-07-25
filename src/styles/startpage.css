@@ -1,0 +1,111 @@
+.body {
+    /* background: url("../../public/Assets/Background/Picture4.png"); */
+}
+
+.startPage {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../../public/Assets/Background/Picture4.png") no-repeat center center fixed;
+}
+
+.content-box {
+    position: relative;
+    width: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    max-width: 55%;
+    box-shadow: 0px 2px 4px #4E4E4E;
+    filter: blur();
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1); 
+}
+.content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    opacity: 0.7;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.content-box-header {
+    margin-top: 30px;
+    margin-bottom: 2%;
+    font-size: 60px;
+    font-family: 'UniversHeaders';
+    text-shadow: 1px 3px 2px grey;
+}
+
+.content-box-title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'UniversHeaders';
+    text-shadow: 1px 3px 1px grey;
+}
+
+.empty-line {
+    background-color: #4E4E4E;
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 4px #4E4E4E;
+}
+
+.content-box-inner {
+    margin-top: 10px;
+    font-family: 'Univers';
+    font-size: 26px;
+    height: 40%;
+    width: 100%;
+}
+
+.empty-line-shorten {
+    background-color: #4E4E4E;
+    height: 1px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 4px #4E4E4E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-box-footer {
+    font-size: 20px;
+    font-family: 'Univers';
+}
+
+.hereButton-container {
+    margin-top: 10px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}

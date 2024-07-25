@@ -9,7 +9,7 @@ const HeaderBar = () => {
                 <img src="../../public/Assets/UTLogo/utlogo.png" alt="logo" className="logo"/>
             </div>
             <div className="comBL-logo-container">
-                <img src="../../public/Assets/" alt="combllogo" className="comBL-logo"/>
+              <h2>UT ComBL Toolkit</h2> 
             </div>
         </header>
         </div>

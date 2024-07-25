@@ -1,9 +1,9 @@
-import { HOME_ROUTE } from "./const";
-import { ABOUT_ROUTE } from "./const";
+import { ABOUT_ROUTE, HOME_ROUTE } from "./const";
+import { START_ROUTE } from "./const";
 
 import TitleScreen from "../pages/titlescreen.js";
 import StartPage from "../pages/startpage.js";
-
+import AboutPage from "../pages/aboutpage.js";
 
 export const routes = [
     {
@@ -11,7 +11,11 @@ export const routes = [
         Component: TitleScreen
     },
     {
-        path: ABOUT_ROUTE,
+        path: START_ROUTE,
         Component: StartPage
+    },
+    {
+        path: ABOUT_ROUTE,
+        Component: AboutPage
     },
 ]; 
