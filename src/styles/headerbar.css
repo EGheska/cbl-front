@@ -7,3 +7,13 @@
     height: 60px;
     color: #FFFFFF;
 }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}

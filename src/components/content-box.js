@@ -3,8 +3,17 @@ import "../styles/content-box.css";
 import { Button } from "@mui/material";
 import { Checkbox } from "@mui/material";
 import { FormControlLabel } from "@mui/material";
+import {useState} from 'react';
+
 
 const ContentBox = ({onButtonClick}) => {
+
+    const [isChecked, setChecked] = useState(false);
+
+    const handleCheckboxChange = (event) => {
+        setChecked(event.target.checked);
+    };
+
     return (
         <div className="contentBox">
             <div className="contentName">
@@ -63,7 +72,7 @@ const ContentBox = ({onButtonClick}) => {
             </div>
             <div className="checkboxContent">
                 <FormControlLabel 
-                    control={<Checkbox />} 
+                    control={<Checkbox checked={isChecked} onChange={handleCheckboxChange}/>} 
                     label="I have read and understood the information provided above."
                     sx={
                         {
@@ -73,6 +82,7 @@ const ContentBox = ({onButtonClick}) => {
                     />
             </div>
             <Button onClick={onButtonClick}
+               
                 sx={{
                     backgroundColor: "#CEFFA7",
                     color: "#000000",
@@ -85,6 +95,7 @@ const ContentBox = ({onButtonClick}) => {
                         backgroundColor: "#CEFFA7",
                     },
                 }} 
+                disabled={!isChecked}
                 variant="contained">
                 Start
             </Button>

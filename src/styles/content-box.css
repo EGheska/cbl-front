@@ -108,6 +108,13 @@
     
 }
 
+@media (min-width: 1921px){
+    .additionalContent {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
 .additionalContent-inner {
     position: relative;
     font-size: 20px;
