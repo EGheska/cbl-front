@@ -7,11 +7,11 @@ import { FormControlLabel } from "@mui/material";
 const ContentBox = ({onButtonClick}) => {
     return (
         <div className="contentBox">
-            <div className="contentHeader">
-                Welcome to
-            </div>
             <div className="contentName">
-                Community-Based Learning Advisor
+                Adopting Community-Based Learning 
+                <div className="ContentName">
+                    in UT Courses and Programs
+                </div>
             </div>
             <div className="emptyLine-title">
 

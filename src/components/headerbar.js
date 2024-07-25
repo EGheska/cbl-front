@@ -5,7 +5,6 @@ const HeaderBar = () => {
     return (
         <div className="header">
         <header className="header-bar">
-            <h1>HeaderBar</h1>
         </header>
         </div>
     );

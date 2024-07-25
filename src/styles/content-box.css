@@ -12,15 +12,18 @@
     margin-top: 50px;
     max-width: 55%;
     box-shadow: 0px 2px 4px #4E4E4E;
-    background-color: transparent;
+    filter: blur();
+    background-color: #ffffff;
+    opacity: 0.7;
+    color: #000000;
 }
 
-.contentHeader {
-    font-size: 40px;
-}
 
 .contentName {
-    font-size: 60px;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'UniversHeaders';
+    text-shadow: 1px 3px 2px grey;
 }
 
 .emptyLine {
@@ -85,7 +88,9 @@
     margin-right: -1vh;
     text-align: left;
     height: 160px;
-    background-color: #D9D9D9;
+    background-color: #FDF1E6;
+    border: 100px #F9D9BA;
+    
 }
 
 .additionalContent-inner {
