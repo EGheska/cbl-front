@@ -13,6 +13,17 @@
     background: url("../../public/Assets/Background/Picture4.png") no-repeat center center fixed;
 }
 
+@media (min-width: 1921px) {
+    .startPage {
+        background: url("../../public/Assets/Background/Picture4.png") no-repeat center center cover;
+        background-size: cover;
+    }
+    .startPage{
+        height: auto;
+    } 
+    
+}
+
 .content-box {
     position: relative;
     width: auto;
