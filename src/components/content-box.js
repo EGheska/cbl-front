@@ -46,6 +46,13 @@ const ContentBox = ({onButtonClick}) => {
                     </ul>
                 </div>
             </div>
+            <div className="preadditionalText">
+                Feedback
+                <div className="emptyLine"></div>
+                <div className="preadditionalText-inner">
+                    On each step and page of our website, you will find a "Provide Feedback" button. This button is available to you at all times, and we encourage you to use it to share any problems, misunderstandings, or suggestions you may have. Your feedback is crucial to us, and we are commited to improving your experience based on your input.          
+                </div>
+            </div>
             <div className="additionalContent">
                 <div className="additionalContent-inner">
                     ADDITIONAL NOTE!!!
@@ -55,7 +62,15 @@ const ContentBox = ({onButtonClick}) => {
                 </div>
             </div>
             <div className="checkboxContent">
-                <FormControlLabel control={<Checkbox />} label="I have read and understood the information provided above." />
+                <FormControlLabel 
+                    control={<Checkbox />} 
+                    label="I have read and understood the information provided above."
+                    sx={
+                        {
+                            fontFamily: 'UniversHeaders',
+                        }
+                    } 
+                    />
             </div>
             <Button onClick={onButtonClick}
                 sx={{

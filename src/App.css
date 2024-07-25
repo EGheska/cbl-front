@@ -2,7 +2,6 @@
   text-align: center;  
   background: url("../public/Assets/Background/Picture2.png") no-repeat center center fixed; 
   font-family: 'Univers', sans-serif;
-  color: rgba(0, 0, 0, 1);
 }
 
 @media (min-width: 1921px) {
