@@ -1,7 +1,7 @@
 .navbar {
     background-color: #1F2229;
     height: 100vh;
-
+    position: absolute;
     width: 269px;
     display: flex;
     color: #FFFFFF;
