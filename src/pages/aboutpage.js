@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
+import Linker from "../components/linker";
 import {Button} from "@mui/material";
 
 const AboutPage = () => {
+    // const [isNextClicked, setIsNextClicked] = useState(false);
+
     return (
         <div className="pageClass">
-            <div className="links">
-            </div>
+            <Linker/>
             <div className="content-box">
                 <div className="content-box-title">
                     Jan van den Akker's Curricular Spiderweb Framework
@@ -25,6 +27,7 @@ const AboutPage = () => {
                         Thijs, A., & van den Akker, J. (Eds.). (2009). Curriculum in development. Netherlands Institute for Curriculum Development (SLO).
                     </div>
                     <Button variant="contained"
+                            // onClick={setIsNextClicked(true)}
                             sx={{
                                 backgroundColor:"#FFFFFFFF",
                                 color:"#000000",

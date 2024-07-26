@@ -5,10 +5,11 @@
     width: 269px;
     display: flex;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .about-div {
-    padding: 0 0 0 90px;
+    padding: 0 0 0 0px;
     height: 26px;
     font-size: 22px;
 }
@@ -16,7 +17,7 @@
 .cbl-div {
     font-size: 22px;
     height: 26px;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 20px;
     margin-bottom: 45px;
 }
 
