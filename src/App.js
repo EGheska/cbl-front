@@ -1,28 +1,22 @@
 import './App.css';
 import React from 'react';
-import {useState} from 'react';
-import HeaderBar from './components/headerbar';
-import  NavBar from './components/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './api.js';
 import { routes } from './util/routes.js';
+import Layout from './components/layout'; // Import the new Layout component
 
 function App() {
-  const [isHeaderBar, setHeaderBar] = useState(true);
-
   return (
-    <Router>
-    <div className="App">
-      {isHeaderBar ? <HeaderBar /> : <NavBar />}
-      <Routes>
-        {routes.map(({ path, Component }) => (
-          <Route key={path} path={path} element={<Component />} />
-        ))}
-      </Routes>
-      {/* <div className='footer'></div> */}
-    </div>
-    </Router>
-  )
+      <Router>
+        <div className="App">
+          <Layout />
+          <Routes>
+            {routes.map(({ path, Component }) => (
+                <Route key={path} path={path} element={<Component />} />
+            ))}
+          </Routes>
+        </div>
+      </Router>
+  );
 }
 
 export default App;
