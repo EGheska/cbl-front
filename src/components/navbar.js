@@ -22,23 +22,26 @@ const NavBar = ({additionalBarItems}) => {
 
     return (
         <div className="navbar">
-        <nav className="navbar-bar">
-            <div className="about-div">
-                <h1>About</h1>
-            </div>
-            <div className="cbl-div">
-                <p>Community-Based Learning</p>
-            </div>
-            <div className="line-div">
-            </div>
-            {additionalItems.length > 0 && (
-                <div className="additional-div">
-                    {additionalItems.map((item) => (
-                        <p>{item}</p>
-                    ))}
+            <nav className="navbar-bar">
+                <div className="about-div">
+                    <h1>About</h1>
                 </div>
-            )}
-        </nav>
+                <div className="cbl-div">
+                    <p>Community-Based Learning</p>
+                </div>
+                <div className="line-div">
+                </div>
+                {additionalItems.length > 0 && (
+                    <div className="additional-div">
+                        {additionalItems.map((item) => (
+                            <p>{item}</p>
+                        ))}
+                    </div>
+                )}
+            </nav>
+            <div className="navbar-footer">
+                <img src="../../public/Assets/UTLogo/utlogo.png" alt="UTLogo" />
+            </div>
         </div>
     );
 };
