@@ -38,7 +38,7 @@ const Linker = ({items}) => {
                 HOME
             </Button>
             <div className="linker-img">
-                <img src="../../public/Assets/Vector.svg" alt="Arrow" />
+                <img src="/Assets/Vector.svg" alt="Arrow" />
             </div>
             {isComBLtoRender ? (
                 <Button 
@@ -54,6 +54,7 @@ const Linker = ({items}) => {
                 >
                     COMMUNITY-BASED LEARNING
                 </Button>
+                
             ) : (
                 <Button 
                     variant="text"
@@ -69,6 +70,9 @@ const Linker = ({items}) => {
                     ABOUT
                 </Button>
             )}
+            <div className="linker-img">
+                <img src="/Assets/Vector.svg" alt="Arrow" />
+            </div>
             {isSpiderWeb ? (
                 <Button 
                     variant="text"

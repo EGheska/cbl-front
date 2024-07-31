@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'UniversHeaders';
-  src: url(../public/Assets/font/Univers\ Next\ Pro\ Heavy\ Condensed.ttf) format('truetype');
+  src: url(../public/Assets/font/Linotype_Univers_620_Bold_Condensed_d9ea7654280f13fbebc7f6dfe06.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
   color: black;
@@ -33,7 +33,15 @@
 
 @font-face {
   font-family: 'Univers';
-  src: url(../public/Assets/font/Univers\ Next\ Pro\ Condensed.ttf);
+  src: url(../public/Assets/font/Linotype_Univers_330_Light_229790e6f7c56ae5de7a50a0e9404f0a2abb.ttf);
+}
+
+@font-face {
+  font-family: 'UniversBold';
+  src: url(../public/Assets/font/Linotype_Univers_620_Bold_Condensed_d9ea7654280f13fbebc7f6dfe06.ttf);
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
 }
 
 .App-logo {

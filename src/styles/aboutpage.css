@@ -7,18 +7,6 @@
     flex-direction: column;
 }
 
-.about-content-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 10%; */
-    /* margin-bottom: 10%; */
-    margin-left: 20%;
-    /* margin-right: 10%; */
-
-}
-
 .linker {
     display: flex;
     justify-content: left;
@@ -29,3 +17,21 @@
     /* margin-top: 10px; */
 
 }
+
+.about-content-box {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+    /* margin-bottom: 10%; */
+    margin-left: 25%;
+    margin-right: 10%;
+
+}
+
+.content-box-inner-header {
+    margin-top: 23px;
+}
+

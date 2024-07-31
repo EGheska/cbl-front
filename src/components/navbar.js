@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/navbar.css";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { routes } from "../util/routes.js";
-
+// import UTLogo from "../../public/Assets/UTLogo/utlogo.png";
 
 const NavBar = ({additionalBarItems}) => {
     const [additionalItems, setAdditionalItems] = useState([]);
@@ -40,7 +39,7 @@ const NavBar = ({additionalBarItems}) => {
                 )}
             </nav>
             <div className="navbar-footer">
-                <img src="../../public/Assets/UTLogo/utlogo.png" alt="UTLogo" />
+                <img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo" />
             </div>
         </div>
     );

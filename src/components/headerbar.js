@@ -6,10 +6,10 @@ const HeaderBar = () => {
         <div className="header">
         <header className="header-bar">
             <div className="logo-container">
-                <img src="../../public/Assets/UTLogo/utlogo.png" alt="logo" className="logo"/>
+                <img src="/Assets/UTLogo/logo_headerbar.png" alt="logo" className="logo"/>
             </div>
             <div className="comBL-logo-container">
-              <h2>UT ComBL Toolkit</h2> 
+              <h3>UT ComBL Toolkit</h3> 
             </div>
         </header>
         </div>

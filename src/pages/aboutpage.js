@@ -11,15 +11,16 @@ const AboutPage = ({items}) => {
             <Linker className="linker" items={items}/>
             <div className="about-content-box">
                 <div className="content-box-title">
-                    Jan van den Akker's Curricular Spiderweb Framework
+                    Jan van den Akker's Curricular Spiderweb 
+                    <p>Framework</p>
                 </div>
                 <div className="emptyLine"></div>
                 <div className="content-box-inner">
                     <div className="content-box-inner-header">
-                        Jan van den Akker's Curricular Spiderweb is a visualization tool for understanding the interconnected aspects of a curriculum. According to the article, the core of a curriculum generally concerns the aims and content of learning. Changes to this core often necessitate changes to many other aspects of the learning plan. The curricular spider web is a method to visualize these relationships and includes the following ten components:
+                        <b>Jan van den Akker's Curricular Spiderweb</b> is a visualization tool for understanding the interconnected aspects of a curriculum. According to the article, the core of a curriculum generally concerns the aims and content of learning. Changes to this core often necessitate changes to many other aspects of the learning plan. The curricular spider web is a method to visualize these relationships and includes the following ten components:
                     </div>
                     <div className="content-box-inner-picture">
-                        <img src="../../public/Assets/akeer's_web.png" alt="Curricular Spiderweb" />
+                        <img src="/Assets/akeer's_web.png" alt="Curricular Spiderweb" />
                     </div>
                     <div className="content-box-inner-footer">
                         These components are interconnected, with the rationale serving as the central link that connects all other curriculum components, ideally providing consistency and coherence. The metaphor of the spider web underscores the fragile and interconnected nature of a curriculum, suggesting that if certain threads are stressed more than others, the entire web may be affected​ (Thijs & van den Akker, 2009).
