@@ -10,14 +10,12 @@ const NavBar = ({additionalBarItems}) => {
     const location = useLocation();
 
     useEffect(() => {
-        console.log("Location:" + location.pathname);
         additionalBarItems.forEach((item) => {
             if (item.type === "cbl" && location.pathname === "/cbl") {
                 setAdditionalItems(["Community-Based Learning"]);
             }
             if (item.type === "about" && location.pathname === "/about") {
                 setAdditionalItems(["About"]);
-                console.log("NavBarItems:" + additionalItems);
             }
         });
     }, [additionalBarItems]);

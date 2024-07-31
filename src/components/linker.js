@@ -3,17 +3,19 @@ import "../styles/linker.css";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Linker = ({items}) => {
     const [isComBLtoRender, setisComBLtoRender] = useState();
     const [isSpiderWeb, setisSpiderWeb] = useState();
+    const location = useLocation();
 
     useEffect(() => {
         items.forEach((item) => {
-            if (item.type === "cbl") {
+            if (item.type === "cbl" && location.pathname === "/cbl") {
                 setisComBLtoRender(true);
             }
-            if (item.type === "about") {
+            if (item.type === "about" && location.pathname === "/about") {
                 setisSpiderWeb(true);
             }
         });
