@@ -1,0 +1,31 @@
+.pageClass {
+    background: url("../../public//Assets/Background/Picture3.png");
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+    /* margin-bottom: 10%; */
+    margin-left: 20%;
+    /* margin-right: 10%; */
+
+}
+
+.linker {
+    display: flex;
+    justify-content: left;
+    max-width: max-content;
+    align-items: center;
+    margin-left: 269px;
+    /* position: absolute; */
+    /* margin-top: 10px; */
+
+}

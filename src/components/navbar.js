@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/navbar.css";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { routes } from "../util/routes.js";
 
 
+const NavBar = ({additionalBarItems}) => {
+    const [additionalItems, setAdditionalItems] = useState([]);
+    const location = useLocation();
 
-const NavBar = (additionalBarItems) => {
+    useEffect(() => {
+        console.log("Location:" + location.pathname);
+        additionalBarItems.forEach((item) => {
+            if (item.type === "cbl" && location.pathname === "/cbl") {
+                setAdditionalItems(["Community-Based Learning"]);
+            }
+            if (item.type === "about" && location.pathname === "/about") {
+                setAdditionalItems(["About"]);
+                console.log("NavBarItems:" + additionalItems);
+            }
+        });
+    }, [additionalBarItems]);
 
     return (
         <div className="navbar">
@@ -16,9 +33,11 @@ const NavBar = (additionalBarItems) => {
             </div>
             <div className="line-div">
             </div>
-            {additionalBarItems  && (
+            {additionalItems.length > 0 && (
                 <div className="additional-div">
-                    <p>Additional</p>
+                    {additionalItems.map((item) => (
+                        <p>{item}</p>
+                    ))}
                 </div>
             )}
         </nav>
