@@ -1,0 +1,8 @@
+.titleScreen {
+    background: url("../../public/Assets/Background/Picture2.png") no-repeat center center fixed;
+
+}
+
+.titleScreen-header {
+    padding: 2%;
+}

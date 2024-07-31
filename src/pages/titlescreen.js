@@ -14,6 +14,7 @@ const TitleScreen = () => {
 
     return (
         <div className="titleScreen">
+            <div className="titleScreen-header"></div>
             <ContentBox onButtonClick={handleButtonClick}/>
         </div>
     );

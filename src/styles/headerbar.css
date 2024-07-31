@@ -6,12 +6,12 @@
     align-items: center;
     padding-left: 2px;
     padding-top: 2px;
-    padding-right: 1%;
     top: 0;
     background-color: #1F2229;
     height: 58px;
     color: #FFFFFF;
     z-index: 1;
+
 }
 
 .logo-container{
@@ -21,4 +21,10 @@
 .logo {
     max-height: 49px;
     width: auto;
+}
+
+.comBL-logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
 }
