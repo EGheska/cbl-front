@@ -20,7 +20,7 @@ const Linker = ({items}) => {
             }
         });
 
-    }, [isComBLtoRender, isSpiderWeb]);
+    }, [isComBLtoRender, isSpiderWeb, location.pathname]);
 
     return (
         <div className="linker">
