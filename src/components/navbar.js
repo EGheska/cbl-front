@@ -10,15 +10,23 @@ const NavBar = ({additionalBarItems}) => {
     const location = useLocation();
 
     useEffect(() => {
+        const itemsToShow = new Set(additionalItems.map(item => item.name));
         additionalBarItems.forEach((item) => {
             if (item.type === "cbl" && location.pathname === "/cbl") {
-                setAdditionalItems(["Community-Based Learning"]);
+                itemsToShow.add("Community-Based Learning");
             }
             if (item.type === "about" && location.pathname === "/about") {
-                setAdditionalItems(["Spiderweb Framework"]);
+                itemsToShow.add("Spiderweb Framework");
             }
         });
-    }, [additionalBarItems]);
+
+        const updatedItems = Array.from(itemsToShow).map((name, index) => ({
+            id: index,
+            name: name
+        }));    
+
+        setAdditionalItems(updatedItems);
+    }, [additionalBarItems, location.pathname]);
 
     return (
         <div className="navbar">
@@ -44,7 +52,7 @@ const NavBar = ({additionalBarItems}) => {
                                     },
                                 }}
                             >
-                                {item}
+                                {item.name}
                             </Button>
                         ))}
                     </div>

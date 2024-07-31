@@ -2,9 +2,13 @@ import React, {useState} from "react";
 import Linker from "../components/linker";
 import {Button} from "@mui/material";
 import "../styles/aboutpage.css";
+import {useNavigate} from "react-router-dom";
 
 const AboutPage = ({items}) => {
-    // const [isNextClicked, setIsNextClicked] = useState(false);
+    const navigate = useNavigate();
+    const handleButtonClick = () => {
+        navigate("/cbl");
+    }
 
     return (
         <div className="pageClass">
@@ -29,7 +33,7 @@ const AboutPage = ({items}) => {
                         Thijs, A., & van den Akker, J. (Eds.). (2009). Curriculum in development. Netherlands Institute for Curriculum Development (SLO).
                     </div>
                     <Button variant="contained"
-                            // onClick={setIsNextClicked(true)}
+                            onClick={handleButtonClick}
                             sx={{
                                 backgroundColor:"#FFFFFFFF",
                                 color:"#000000",
