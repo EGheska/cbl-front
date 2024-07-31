@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/navbar.css";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Button } from "@mui/material";
 // import UTLogo from "../../public/Assets/UTLogo/utlogo.png";
 
 const NavBar = ({additionalBarItems}) => {
@@ -14,7 +15,7 @@ const NavBar = ({additionalBarItems}) => {
                 setAdditionalItems(["Community-Based Learning"]);
             }
             if (item.type === "about" && location.pathname === "/about") {
-                setAdditionalItems(["About"]);
+                setAdditionalItems(["Spiderweb Framework"]);
             }
         });
     }, [additionalBarItems]);
@@ -33,7 +34,18 @@ const NavBar = ({additionalBarItems}) => {
                 {additionalItems.length > 0 && (
                     <div className="additional-div">
                         {additionalItems.map((item) => (
-                            <p>{item}</p>
+                            <Button variant="text"
+                                sx={{
+                                    color:"#FFFFFF",
+                                    fontSize: "15px",
+                                    fontFamily: 'Univers',
+                                    '&:hover': {
+                                        color: "#FFFFFF",
+                                    },
+                                }}
+                            >
+                                {item}
+                            </Button>
                         ))}
                     </div>
                 )}

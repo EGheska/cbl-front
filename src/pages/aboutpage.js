@@ -15,7 +15,7 @@ const AboutPage = ({items}) => {
                     <p>Framework</p>
                 </div>
                 <div className="emptyLine"></div>
-                <div className="content-box-inner">
+                <div className="content-box-inner-about">
                     <div className="content-box-inner-header">
                         <b>Jan van den Akker's Curricular Spiderweb</b> is a visualization tool for understanding the interconnected aspects of a curriculum. According to the article, the core of a curriculum generally concerns the aims and content of learning. Changes to this core often necessitate changes to many other aspects of the learning plan. The curricular spider web is a method to visualize these relationships and includes the following ten components:
                     </div>
@@ -33,6 +33,7 @@ const AboutPage = ({items}) => {
                             sx={{
                                 backgroundColor:"#FFFFFFFF",
                                 color:"#000000",
+                                marginLeft: "40%",
                                 width: "213px",
                                 height: "38px",
                                 borderRadius: "10px",
@@ -43,9 +44,12 @@ const AboutPage = ({items}) => {
                                     backgroundColor: "#FFFFFFFF",
 
                                 },
+                                marginBottom: "5%",
                             }}
                     >
                         Next
+                        <div style={{marginRight: "10px"}}></div>
+                        <img src="/Assets/Vector.svg" alt="Arrow" />
                     </Button>
                 </div>
             </div>

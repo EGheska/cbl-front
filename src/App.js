@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function App() {
   const [items, setItems] = useState([
-    { type: "about", name: "About" },
+    { type: "about", name: "Spiderweb Framework" },
     { type: "cbl", name: "Community-Based Learning" },
   ]);
   return (
