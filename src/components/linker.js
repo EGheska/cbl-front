@@ -7,29 +7,26 @@ import { useLocation } from "react-router-dom";
 
 const Linker = ({items}) => {
     const [isComBLtoRender, setisComBLtoRender] = useState();
-    const [isSpiderWeb, setisSpiderWeb] = useState();
     const location = useLocation();
 
     useEffect(() => {
         items.forEach((item) => {
             if (item.type === "cbl" && location.pathname === "/cbl") {
                 setisComBLtoRender(true);
-            }
-            if (item.type === "about" && location.pathname === "/about") {
-                setisSpiderWeb(true);
-            }
+            };
         });
 
-    }, [isComBLtoRender, isSpiderWeb, location.pathname]);
+    }, [isComBLtoRender, location.pathname]);
 
     return (
         <div className="linker">
             <Button 
+                onClick={() => window.location.href = "/start"}
                 variant="text"
                 sx={{
                     color:"#5A5A5A",
                     fontSize: "20px",
-                    fontFamily: 'Univers',
+                    fontFamily: 'UniversBold',
                     '&:hover': {
                         color: "#FFFFFF",
                     },
@@ -40,23 +37,7 @@ const Linker = ({items}) => {
             <div className="linker-img">
                 <img src="/Assets/Vector.svg" alt="Arrow" />
             </div>
-            {isComBLtoRender ? (
-                <Button 
-                    variant="text"
-                    sx={{
-                        color:"#5A5A5A",
-                        fontSize: "20px",
-                        fontFamily: 'Univers',
-                        '&:hover': {
-                            color: "#FFFFFF",
-                        },
-                    }}
-                >
-                    COMMUNITY-BASED LEARNING
-                </Button>
-                
-            ) : (
-                <Button 
+            {/* <Button 
                     variant="text"
                     sx={{
                         color:"#5A5A5A",
@@ -68,39 +49,41 @@ const Linker = ({items}) => {
                     }}
                 >
                     ABOUT
-                </Button>
-            )}
-            <div className="linker-img">
-                <img src="/Assets/Vector.svg" alt="Arrow" />
-            </div>
-            {isSpiderWeb ? (
-                <Button 
-                    variant="text"
-                    sx={{
-                        color:"#5A5A5A",
-                        fontSize: "20px",
-                        fontFamily: 'Univers',
-                        '&:hover': {
-                            color: "#FFFFFF",
-                        },
-                    }}
-                >
-                    Spiderweb Framework
-                </Button>
+                </Button> */}
+                {/* <div className="linker-img">
+                    <img src="/Assets/Vector.svg" alt="Arrow" />
+                </div> */}
+            {isComBLtoRender ? (
+               <div className="linker-div">ComBL</div>
+                // <Button 
+                //     variant="text"
+                //     sx={{
+                //         color:"#5A5A5A",
+                //         fontSize: "20px",
+                //         fontFamily: 'Univers',
+                //         '&:hover': {
+                //             color: "#FFFFFF",
+                //         },
+                //     }}
+                // >
+                //     COMMUNITY-BASED LEARNING
+                // </Button>
+                
             ) : (
-                <Button 
-                    variant="text"
-                    sx={{
-                        color:"#5A5A5A",
-                        fontSize: "20px",
-                        fontFamily: 'Univers',
-                        '&:hover': {
-                            color: "#FFFFFF",
-                        },
-                    }}
-                >
-                    smth
-                </Button>
+                <div className="linker-div">Spiderweb Framework</div>    
+            // <Button 
+            //     variant="text"
+            //     sx={{
+            //         color:"#5A5A5A",
+            //         fontSize: "20px",
+            //         fontFamily: 'Univers',
+            //         '&:hover': {
+            //             color: "#FFFFFF",
+            //         },
+            //     }}
+            // >
+            //     Spiderweb Framework
+            // </Button>)}
             )}
         </div>
     );

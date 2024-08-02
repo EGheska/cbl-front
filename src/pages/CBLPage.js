@@ -1,9 +1,22 @@
-import {react} from 'react';
+import {React} from 'react';
+import Linker from '../components/linker';
 
-const CBLPage = () => {
+const CBLPage = ({items}) => {
     return (
-        <div>
-            <h1> CBL Page </h1>
+        <div className='pageClass'>
+            <Linker className='linker' items={items}/>
+            <div className='about-combl-box'>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>
+                <div className='dropout-box'></div>   
+            </div>
         </div>
     );
 }

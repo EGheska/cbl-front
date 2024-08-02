@@ -6,7 +6,6 @@ import { FormControlLabel } from "@mui/material";
 import {useState} from 'react';
 
 
-
 const ContentBox = ({onButtonClick}) => {
 
     const [isChecked, setChecked] = useState(false);
@@ -16,7 +15,7 @@ const ContentBox = ({onButtonClick}) => {
     };
 
     return (
-        <div>
+        <div className="root-class">
             <div className="emptyContainer"></div>
         <div className="contentBox">
             <div className="contentName">

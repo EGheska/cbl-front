@@ -28,33 +28,38 @@ const NavBar = ({additionalBarItems}) => {
         setAdditionalItems(updatedItems);
     }, [additionalBarItems, location.pathname]);
 
+    const handleNavButton = () => {
+        if (additionalItems[0].name === "Community-Based Learning" && location.pathname !== "/cbl") {
+            window.location.href = "/cbl";
+        } else if (additionalItems[0].name === "Spiderweb Framework") {
+            window.location.href = "/about";
+        }
+    };
+
     return (
         <div className="navbar">
             <nav className="navbar-bar">
                 <div className="about-div">
                     <h1>About</h1>
                 </div>
-                <div className="cbl-div">
-                    <p>Community-Based Learning</p>
-                </div>
                 <div className="line-div">
                 </div>
                 {additionalItems.length > 0 && (
                     <div className="additional-div">
+                        
                         {additionalItems.map((item) => (
-                            <Button variant="text"
-                                sx={{
-                                    color:"#FFFFFF",
-                                    fontSize: "15px",
-                                    fontFamily: 'Univers',
-                                    '&:hover': {
-                                        color: "#FFFFFF",
-                                    },
-                                }}
-                            >
-                                {item.name}
-                            </Button>
+                            <li className="items-list">
+                                <a style={{ 
+                                    color: "white", textDecoration: 'none'
+                                }} 
+                                href={
+                                    item.name === "Community-Based Learning" ? "/cbl" : "/about"
+                                }>
+                                &#x2022; {item.name}
+                                </a>
+                            </li>
                         ))}
+                        
                     </div>
                 )}
             </nav>
