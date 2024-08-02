@@ -4,6 +4,7 @@
     position: fixed;
     width: 269px;
     display: flex;
+    justify-content: center;
     color: #FFFFFF;
     text-align: center;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
@@ -11,10 +12,11 @@
 
 .about-div {
     font-family: "UniversHeaders";
-    padding: 0 0 0 0px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15%;
     height: 26px;
     font-size: 22px;
-    margin: 10%;
 }
 
 .cbl-div {
@@ -25,10 +27,8 @@
 }
 
 .line-div {
-    display: block;
-    position: relative;
-    /* margin-top: 15px; */
     width: 220px;
+    margin-right: 25px;
     background-color: #A5A5A5;
     height: 1px;
     margin-left: 20px;
@@ -42,15 +42,12 @@
     background-color: #1F2229;
     display: flex;
     color: #FFFFFF;
-    text-align: center;
+    left: 0;
 }
 
 .items-list {
     display: flex;
-    /* flex-direction: row; */
     justify-content: flex-start;
-    /* align-items: center; */
-    /* padding: 10px; */
     padding-right: 5%;
     padding-left: 10%;
     padding-top: 10px;

@@ -28,14 +28,6 @@ const NavBar = ({additionalBarItems}) => {
         setAdditionalItems(updatedItems);
     }, [additionalBarItems, location.pathname]);
 
-    const handleNavButton = () => {
-        if (additionalItems[0].name === "Community-Based Learning" && location.pathname !== "/cbl") {
-            window.location.href = "/cbl";
-        } else if (additionalItems[0].name === "Spiderweb Framework") {
-            window.location.href = "/about";
-        }
-    };
-
     return (
         <div className="navbar">
             <nav className="navbar-bar">
