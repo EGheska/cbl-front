@@ -6,6 +6,7 @@
     display: flex;
     color: #FFFFFF;
     text-align: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .about-div {

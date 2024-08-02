@@ -53,7 +53,7 @@ const NavBar = ({additionalBarItems}) => {
                                     color: "white", textDecoration: 'none'
                                 }} 
                                 href={
-                                    item.name === "Community-Based Learning" ? "/cbl" : "/about"
+                                    item.name === "Community-Based Learning" ? "#" : "/about"
                                 }>
                                 &#x2022; {item.name}
                                 </a>
