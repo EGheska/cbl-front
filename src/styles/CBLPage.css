@@ -72,5 +72,10 @@
 }
 
 .content-box-inner-about-footer {
+    display: flex;
     flex-direction: row;
+    flex: 6;
+    /*display: block;*/
+    /*position: relative;*/
+    /*flex-direction: row;*/
 }

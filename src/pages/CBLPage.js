@@ -24,6 +24,11 @@ const CBLPage = ({items}) => {
             [section]: !prevOpenSection[section],
         }));
     };
+
+    const getSign = (section) => {
+        return openSection[section] ? '-' : '+';
+    };
+
     return (
         <div className='pageClass'>
             <Linker className='linker' items={items}/>
@@ -46,7 +51,7 @@ const CBLPage = ({items}) => {
                 </div>
                 <div className='content-box-inner-about-dropouts'>
                     <div className="emptyLineDropouts"></div>
-                    <div className='dropouts' onClick={()=> toggleSection('rationale')}>+ Rationale</div>
+                    <div className='dropouts' onClick={()=> toggleSection('rationale')}>{getSign('rationale')} Rationale</div>
                     {openSection.rationale && (
                     <div className="section-content">
                             The rationale of ComBL enhances students ‘engagement, help them better understand and apply knowledge,
@@ -57,7 +62,7 @@ const CBLPage = ({items}) => {
                         </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={() => toggleSection('aims')}>+ Aims and Objectives</div>
+                    <div className="dropouts" onClick={() => toggleSection('aims')}>{getSign('aims')} Aims and Objectives</div>
                     {openSection.aims && (
                     <div className="section-content">
                         The aims and objectives of Community-Based Learning (ComBL) include connecting classroom learning with
@@ -70,7 +75,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('content')}>+ Content</div>
+                    <div className="dropouts" onClick={()=> toggleSection('content')}>{getSign('content')} Content</div>
                     {openSection.content && (
                     <div className="section-content">
                         In the context of community-based learning, students learn to apply theoretical concepts from their courses to
@@ -81,7 +86,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('learning')}>+ Learning Activities</div>
+                    <div className="dropouts" onClick={()=> toggleSection('learning')}>{getSign('learning')} Learning Activities</div>
                     {openSection.learning && (
                     <div className="section-content">
                         According to the article “Community-Based Education: A Participatory Approach to Achieve the Sustainable
@@ -93,7 +98,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('teacher')}>+ Teacher Role</div>
+                    <div className="dropouts" onClick={()=> toggleSection('teacher')}>{getSign('teacher')} Teacher Role</div>
                     {openSection.teacher && (
                     <div className="section-content">
                         In community-based learning, teachers connect classroom learning to real-world community issues (Joseph &
@@ -105,7 +110,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('resources')}>+ Material and Resources</div>
+                    <div className="dropouts" onClick={()=> toggleSection('resources')}>{getSign('resources')} Material and Resources</div>
                     {openSection.resources && (
                     <div className="section-content">
                         Empty spaces, what are we living for?
@@ -123,7 +128,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('grouping')}>+ Grouping</div>
+                    <div className="dropouts" onClick={()=> toggleSection('grouping')}>{getSign('grouping')} Grouping</div>
                     {openSection.grouping && (
                     <div className="section-content">
                         Students engaged in community-based learning collaborate with a variety of local partners. According to the
@@ -136,7 +141,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('location')}>+ Location</div>
+                    <div className="dropouts" onClick={()=> toggleSection('location')}>{getSign('location')} Location</div>
                     {openSection.location && (
                     <div className="section-content">
                         Is this the real life? Is this just fantasy?
@@ -149,7 +154,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('time')}>+ Time</div>
+                    <div className="dropouts" onClick={()=> toggleSection('time')}>{getSign('time')} Time</div>
                     {openSection.time && (
                     <div className="section-content">
                         Adequate preparation and training before engaging with the community are vital. This preparation includes
@@ -167,7 +172,7 @@ const CBLPage = ({items}) => {
                     </div>
                     )}
                     <div className="emptyLineDropouts"></div>
-                    <div className="dropouts" onClick={()=> toggleSection('assesment')}>+ Assessment</div>
+                    <div className="dropouts" onClick={()=> toggleSection('assesment')}>{getSign('assesment')} Assessment</div>
                     {openSection.assesment && (
                     <div className="section-content">
                         The recommendation of the NEA, a comprehensive approach to student assessment that involves the
@@ -215,6 +220,7 @@ const CBLPage = ({items}) => {
                             marginLeft: "40%",
                             width: "213px",
                             height: "38px",
+                            flex: 2,
                             borderRadius: "10px",
                             fontSize: "20px",
                             fontFamily: 'Univers',
