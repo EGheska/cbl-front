@@ -57,6 +57,20 @@
     font-size: 24px;
 }
 
+.section-content {
+    font-family: 'Univers';
+    /*padding: 25px;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    /*margin-bottom: 27px;*/
+}
+
 .dropouts {
     padding: 10px;
+}
+
+.content-box-inner-about-footer {
+    flex-direction: row;
 }
