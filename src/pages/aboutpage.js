@@ -32,29 +32,29 @@ const AboutPage = ({items}) => {
                     <div className="content-box-inner-grey-txt">
                         Thijs, A., & van den Akker, J. (Eds.). (2009). Curriculum in development. Netherlands Institute for Curriculum Development (SLO).
                     </div>
-                    <Button variant="contained"
-                            onClick={handleButtonClick}
-                            sx={{
-                                backgroundColor:"#FFFFFFFF",
-                                color:"#000000",
-                                marginLeft: "40%",
-                                width: "213px",
-                                height: "38px",
-                                borderRadius: "10px",
-                                fontSize: "20px",
-                                fontFamily: 'Univers',
-                                boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                                '&:hover': {
-                                    backgroundColor: "#FFFFFFFF",
+                    {/*<Button variant="contained"*/}
+                    {/*        onClick={handleButtonClick}*/}
+                    {/*        sx={{*/}
+                    {/*            backgroundColor:"#FFFFFFFF",*/}
+                    {/*            color:"#000000",*/}
+                    {/*            marginLeft: "40%",*/}
+                    {/*            width: "213px",*/}
+                    {/*            height: "38px",*/}
+                    {/*            borderRadius: "10px",*/}
+                    {/*            fontSize: "20px",*/}
+                    {/*            fontFamily: 'Univers',*/}
+                    {/*            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",*/}
+                    {/*            '&:hover': {*/}
+                    {/*                backgroundColor: "#FFFFFFFF",*/}
 
-                                },
-                                marginBottom: "5%",
-                            }}
-                    >
-                        Next
-                        <div style={{marginRight: "10px"}}></div>
-                        <img src="/Assets/Vector.svg" alt="Arrow" />
-                    </Button>
+                    {/*            },*/}
+                    {/*            marginBottom: "5%",*/}
+                    {/*        }}*/}
+                    {/*>*/}
+                    {/*    Next*/}
+                    {/*    <div style={{marginRight: "10px"}}></div>*/}
+                    {/*    <img src="/Assets/Vector.svg" alt="Arrow" />*/}
+                    {/*</Button>*/}
                 </div>
             </div>
         </div>

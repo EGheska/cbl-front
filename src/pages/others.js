@@ -5,7 +5,11 @@ const Others = ({items}) => {
     return (
         <div className="pageClass">
             <Linker className="linker" items={items}/>
-
+            <div className="about-content-box-cbl">
+                <div className="content-box-title">
+                    ComBL in Other Universities
+                </div>
+            </div>
         </div>
     );
 };
