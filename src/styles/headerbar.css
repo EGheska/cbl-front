@@ -27,4 +27,6 @@
     display: flex;
     align-items: center;
     margin-right: 1%;
+    font-family: UniversHeaders;
+    font-size: 23px;
 }

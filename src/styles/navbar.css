@@ -11,12 +11,20 @@
 }
 
 .about-div {
-    font-family: "UniversHeaders";
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 15%;
-    height: 26px;
-    font-size: 22px;
+    /*font-family: "UniversHeaders";*/
+    /*justify-content: center;*/
+    /*width: 100%;*/
+    /*padding-bottom: 15%;*/
+    /*height: 26px;*/
+    /*font-size: 22px;*/
+    /*position: absolute;*/
+    bottom: 0;
+    width: 214px;
+    height: 108px;
+    background-color: #1F2229;
+    display: flex;
+    color: #FFFFFF;
+    left: 0;
 }
 
 .cbl-div {
@@ -30,19 +38,23 @@
     width: 220px;
     margin-right: 25px;
     background-color: #A5A5A5;
-    height: 1px;
+    /*height: 1px;*/
     margin-left: 20px;
 }
 
 .navbar-footer {
     position: absolute;
     bottom: 0;
-    width: 214px;
-    height: 108px;
+    margin-left: 10%;
+    /*width: 214px;*/
+    height: 50px;
     background-color: #1F2229;
     display: flex;
     color: #FFFFFF;
     left: 0;
+    font-family: 'UniversHeaders', serif;
+    font-size: 28px;
+    margin-bottom: 5%;
 }
 
 .items-list {

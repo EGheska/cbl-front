@@ -68,7 +68,7 @@ const NavBar = ({additionalBarItems}) => {
         <div className="navbar">
             <nav className="navbar-bar">
                 <div className="about-div">
-                    <h1>About</h1>
+                    <img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>
                 </div>
                 <div className="line-div">
                 </div>
@@ -139,7 +139,8 @@ const NavBar = ({additionalBarItems}) => {
                 {/*)}*/}
             </nav>
             <div className="navbar-footer">
-                <img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>
+                UT ComBL Toolkit
+                {/*<img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>*/}
             </div>
         </div>
     );
