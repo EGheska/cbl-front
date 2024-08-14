@@ -6,10 +6,14 @@ import Layout from './components/layout'; // Import the new Layout component
 import {useState} from 'react';
 
 function App() {
+    // Items for linker to render a page
     const [items, setItems] = useState([
         {type: "about", name: "Spiderweb Framework"},
         {type: "cbl", name: "Community-Based Learning"},
         {type: "cbl-in-others", name: "ComBL in Other Universities"},
+        {type: "cbl-toolkit", name: "ComBL Toolkit"},
+        {type: "results", name: "Results"},
+        // {type: "cbl-toolkit", name: "ComBL Toolkit"},
     ]);
     return (
         <Router>
