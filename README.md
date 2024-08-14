@@ -8,9 +8,9 @@
 
 [//]: # (---)
 
-### The project runs on `node` and requires a `node v20.15.1` version to be installed. 
-### This project requires a `npm 10.7.0` to be installed 
-### This project uses a Material UI component library which should be installed. To install the library run `npm install @mui/material` 
+ The project runs on `node` and requires a `node v20.15.1` version to be installed. 
+ This project requires a `npm 10.7.0` to be installed 
+ This project uses a Material UI component library which should be installed. To install the library run `npm install @mui/material` 
 
 [//]: # (---)
 
@@ -21,7 +21,7 @@
 
 [//]: # (---)
 
-### The project was developed for the...
+ The project was developed for the...
 
 [//]: # (---)
 
