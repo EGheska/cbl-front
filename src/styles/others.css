@@ -1,0 +1,30 @@
+b {
+    font-family: "UniversBold", serif;
+}
+
+.about-content-box-cbl-others {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 15%;
+    max-width: 1704px;
+    font-family: "Univers", serif;
+}
+
+.emptyLine-cbl-others {
+    width: 1074px;
+    height: 1px;
+    background: #000000;
+}
+
+.content-box-inner-others {
+    width: 1074px;
+    text-align: left;
+}
+
+.content-box-inner-bottom-others {
+    width: 1074px;
+    text-align: left;
+}
