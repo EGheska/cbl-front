@@ -1,29 +1,34 @@
-import {ABOUT_ROUTE, HOME_ROUTE, START_ROUTE, CBL_ROUTE, OTHER_ROUTE} from "./const";
+import * as Routes from "./const";
 import TitleScreen from "../pages/titlescreen.js";
 import StartPage from "../pages/startpage.js";
 import AboutPage from "../pages/aboutpage.js";
 import CBLPage from "../pages/CBLPage.js";
 import Others from "../pages/others.js";
+import CBLToolkit from "../pages/CBLToolkit.js";
 
 export const routes = [
     {
-        path: HOME_ROUTE,
+        path: Routes.HOME_ROUTE,
         Component: TitleScreen
     },
     {
-        path: START_ROUTE,
+        path: Routes.START_ROUTE,
         Component: StartPage
     },
     {
-        path: ABOUT_ROUTE,
+        path: Routes.ABOUT_ROUTE,
         Component: AboutPage
     },
     {
-        path: CBL_ROUTE,
+        path: Routes.CBL_ROUTE,
         Component: CBLPage
     },
     {
-        path: OTHER_ROUTE,
+        path: Routes.OTHER_ROUTE,
         Component: Others
+    },
+    {
+        path: Routes.CBL_TOOLKIT,
+        Component: CBLToolkit
     },
 ]; 
