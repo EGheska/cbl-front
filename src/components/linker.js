@@ -54,13 +54,13 @@ const Linker = ({items}) => {
                 <img src="/Assets/Vector.svg" alt="Arrow"/>
             </div>
             {isComBLtoRender.combl && (
-                <div className="linker-div">ComBL</div>
+                <div className="linker-div">about ComBL</div>
             )}
             {!isComBLtoRender.others && !isComBLtoRender.combl && (
                 <div className="linker-div">Spiderweb Framework</div>
             )}
             {isComBLtoRender.others && (
-                <div className="linker-div">Others</div>
+                <div className="linker-div">ComBL in Other Universities</div>
             )}
 
         </div>
