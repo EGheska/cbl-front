@@ -19,71 +19,27 @@ const Linker = ({items}) => {
     });
 
     useEffect(() => {
-        // Reset states initially
         setIsFromToolkit(false);
-        setisComBLtoRender({ combl: false, others: false });
-        setisComBLtoRender({ questionaire: false, result: false });
+        setisComBLtoRender({combl: false, others: false});
+        setisToolkitRender({questionaire: false, result: false});
 
         if (location.pathname === '/cbl-toolkit') {
             setIsFromToolkit(true);
-            setisComBLtoRender({ questionaire: true, result: false });
         }
 
         items.forEach((item) => {
             if (item.type === "cbl" && location.pathname === "/cbl") {
-                setisComBLtoRender({ combl: true, others: false });
+                setisComBLtoRender({combl: true, others: false});
             } else if (item.type === "cbl-in-others" && location.pathname === "/cbl-in-others") {
-                setisComBLtoRender({ combl: false, others: true });
+                setisComBLtoRender({combl: false, others: true});
+            } else if (item.type === "cbl-toolkit" && location.pathname === "/cbl-toolkit") {
+                setisToolkitRender({questionaire: true, result: false});
+            } else if (item.type === "cbl-result" && location.pathname === "/cbl/result") {
+                setisToolkitRender({questionaire: false, result: true});
             }
         });
 
     }, [location.pathname, items]);
-
-    // useEffect(() => {
-    //
-    //     if (location.pathname === 'cbl-toolkit') {
-    //         setIsFromToolkit(true);
-    //     }
-    //
-    //     let foundMatch = false;
-    //
-    //     items.forEach((item) => {
-    //
-    //         if (item.type === "cbl-toolkit" && location.pathname === "/cbl-toolkit") {
-    //             foundMatch = true;
-    //             setisToolkitRender(prevState => ({
-    //                 ...prevState,
-    //                 questionaire: true,
-    //                 result: false,
-    //             }))
-    //         }
-    //
-    //         if (item.type === "cbl" && location.pathname === "/cbl") {
-    //             foundMatch = true;
-    //             setisComBLtoRender(prevState => ({
-    //                 ...prevState,
-    //                 combl: true,
-    //                 others: false,
-    //
-    //             }))
-    //         } else if (item.type === "cbl-in-others" && location.pathname === "/cbl-in-others") {
-    //             foundMatch = true;
-    //             setisComBLtoRender(prevState => ({
-    //                 ...prevState,
-    //                 combl: false,
-    //                 others: true,
-    //             }))
-    //         }
-    //     });
-    //
-    //     if (!foundMatch) {
-    //         setisComBLtoRender({
-    //             combl: false,
-    //             others: false,
-    //         })
-    //     }
-    //
-    // }, [location.pathname, isToolkitRender, isComBLtoRender]);
 
     return (
         <div className="linker">
