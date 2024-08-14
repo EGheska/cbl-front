@@ -5,8 +5,19 @@ import {useLocation} from "react-router-dom";
 import {Button} from "@mui/material";
 // import UTLogo from "../../public/Assets/UTLogo/utlogo.png";
 
-const NavBar = ({additionalBarItems}) => {
+const NavBar = () => {
+
+    /*
+    @hook used for conditionally render the links for the questionaire.
+     */
     // const [additionalItems, setAdditionalItems] = useState([]);
+
+    /*
+    @hook used for conditional rendering the nabvbar.
+     */
+    // const [isNavbarFromQuestion, setIsNavbarFromQuestion] = useState(false);
+
+
     const [isVisible, setIsVisible] = useState({
         spiderweb: false,
         combl: false,
@@ -15,6 +26,7 @@ const NavBar = ({additionalBarItems}) => {
     const location = useLocation();
 
     useEffect(() => {
+
         if (location.pathname === "/cbl") {
             setIsVisible(prevState => ({
                 ...prevState,
@@ -74,49 +86,39 @@ const NavBar = ({additionalBarItems}) => {
                 </div>
                 <div className="additional-div">
                     <div className="items-list">
-                        {isVisible.spiderweb && (
-                            <span style={{marginRight: '10px'}}>&#x2022;</span>
-                        )}
-                        {!isVisible.spiderweb && (
-                            <span style={{fontSize: '20px', marginRight: '10px'}}>&#x25E6;</span>
-                        )}
-                        <a style={{
-                            color: "white", textDecoration: 'none',
-                        }} href={
-                            "/about"
-                        }>
-                            Spiderweb Framework
-                        </a>
-                    </div>
-                    <div className="items-list">
-                        {isVisible.combl && (
-                            <span style={{marginRight: '10px'}}>&#x2022;</span>
-                        )}
-                        {!isVisible.combl && (
-                            <span style={{fontSize: '20px', marginRight: '10px'}}>&#x25E6;</span>
-                        )}
-                        <a style={{
-                            color: "white", textDecoration: 'none',
-                        }} href={
-                            "/cbl"
-                        }>
-                            Community-Based Learning
-                        </a>
-                    </div>
-                    <div className="items-list">
-                        {isVisible.others && (
-                            <span style={{marginRight: '10px'}}>&#x2022;</span>
-                        )}
-                        {!isVisible.others && (
-                            <span style={{fontSize: '20px', marginRight: '10px'}}>&#x25E6;</span>
-                        )}
-                        <a style={{
-                            color: "white", textDecoration: 'none',
-                        }} href={
-                            "/cbl-in-others"
-                        }>
-                            ComBL in Other Universities
-                        </a>
+                        <div className="item">
+                            {isVisible.spiderweb && (
+                                <span>&#x2022;</span>
+                            )}
+                            {!isVisible.spiderweb && (
+                                <span>&#x25E6;</span>
+                            )}
+                            <a href={"/about"}>
+                                Spiderweb Framework
+                            </a>
+                        </div>
+                        <div className="item">
+                            {isVisible.combl && (
+                                <span>&#x2022;</span>
+                            )}
+                            {!isVisible.combl && (
+                                <span>&#x25E6;</span>
+                            )}
+                            <a href={"/cbl"}>
+                                Community-Based Learning
+                            </a>
+                        </div>
+                        <div className="item">
+                            {isVisible.others && (
+                                <span>&#x2022;</span>
+                            )}
+                            {!isVisible.others && (
+                                <span>&#x25E6;</span>
+                            )}
+                            <a style={{color: "white", textDecoration: 'none'}} href={"/cbl-in-others"}>
+                                ComBL in Other Universities
+                            </a>
+                        </div>
                     </div>
                 </div>
                 {/*{additionalItems.length > 0 && (*/}
