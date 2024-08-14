@@ -80,7 +80,7 @@
 
 .mainText {
     position: relative;
-    margin-top: 3%;
+    margin-top: 7%;
     font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
@@ -102,7 +102,7 @@
     margin-left: -1vh;
     margin-right: -1vh;
     text-align: left;
-    height: 150px;
+    height: 160px;
     background-color: #FDF1E6;
     border: 100px #F9D9BA;
     
@@ -133,6 +133,9 @@
 }
 
 .checkboxContent {
+    /*display: inline;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
     position: relative;
     margin-top: 2%;
     margin-bottom: -2%;
@@ -140,9 +143,10 @@
 
 .preadditionalText {
     position: relative;
-    margin-top: 28%;
+    margin-top: 29%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 1%;
     text-align: left;
     height: 127px;
     font-size: 20px;

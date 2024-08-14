@@ -88,10 +88,10 @@ const NavBar = () => {
                     <div className="items-list">
                         <div className="item">
                             {isVisible.spiderweb && (
-                                <span>&#x2022;</span>
+                                <span className="navbar-span">&#x2022;</span>
                             )}
                             {!isVisible.spiderweb && (
-                                <span>&#x25E6;</span>
+                                <span className="navbar-span">&#x25E6;</span>
                             )}
                             <a href={"/about"}>
                                 Spiderweb Framework
@@ -99,10 +99,10 @@ const NavBar = () => {
                         </div>
                         <div className="item">
                             {isVisible.combl && (
-                                <span>&#x2022;</span>
+                                <span className="navbar-span">&#x2022;</span>
                             )}
                             {!isVisible.combl && (
-                                <span>&#x25E6;</span>
+                                <span className="navbar-span">&#x25E6;</span>
                             )}
                             <a href={"/cbl"}>
                                 Community-Based Learning
@@ -110,10 +110,10 @@ const NavBar = () => {
                         </div>
                         <div className="item">
                             {isVisible.others && (
-                                <span>&#x2022;</span>
+                                <span className="navbar-span">&#x2022;</span>
                             )}
                             {!isVisible.others && (
-                                <span>&#x25E6;</span>
+                                <span className="navbar-span">&#x25E6;</span>
                             )}
                             <a style={{color: "white", textDecoration: 'none'}} href={"/cbl-in-others"}>
                                 ComBL in Other Universities

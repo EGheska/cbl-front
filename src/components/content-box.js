@@ -68,7 +68,7 @@ const ContentBox = ({onButtonClick}) => {
                 <div className="additionalContent-inner">
                     ADDITIONAL NOTE!!!
                     <div className="additionalContent-inner-text">
-                        This service is a prototype of the upcoming web-service too. The information provided on the page is based on thorough research but has not been formally approved by educational staff. The information on community-based learning might not be fully accurate, as well as, the tool's advice is objective and may require further research and approval.
+                        This service is a prototype of the upcoming web-service tool. The information provided on the page is based on thorough research but has not been formally approved by educational staff. The information on community-based learning might not be fully accurate, as well as, the tool's advice is objective and may require further research and approval.
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ const ContentBox = ({onButtonClick}) => {
                 }} 
                 disabled={!isChecked}
                 variant="contained">
-                Start
+                Proceed
             </Button>
         </div>
         </div>
