@@ -8,7 +8,7 @@ const StartPage = () => {
     const navigate = useNavigate();
 
     const onButtonClick = () => {
-        navigate("/cbl-toolkit")
+        navigate("/cbl-toolkit/learning")
     }
 
     const handleAboutButton = () => {
