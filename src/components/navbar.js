@@ -71,7 +71,7 @@ const NavBar = () => {
                 setIsVisible(prevState => ({ ...prevState, [currentSection]: true }));
             }
 
-            setIsNavbarFromQuestion(Object.keys(pathMap).slice(0, 10).includes(location.pathname));
+            setIsNavbarFromQuestion(Object.keys(pathMap).slice(0, 11).includes(location.pathname));
         }, [location]);
 
 
