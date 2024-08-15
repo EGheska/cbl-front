@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 
-const Question = ({items, onQuestionData, currentQuestion}) => {
+const Question = ({question}) => {
     const [isQuestion, setIsQuestion] = React.useState({
         learning: false,
         aims: false,
@@ -20,7 +20,6 @@ const Question = ({items, onQuestionData, currentQuestion}) => {
 
 
     useEffect(() => {
-        onQuestionData(data);
 
         setIsQuestion({
             learning: false,
@@ -35,76 +34,11 @@ const Question = ({items, onQuestionData, currentQuestion}) => {
             assessment: false,
         });
 
-        const currentType = data[currentQuestion];
-
         setIsQuestion(prevState => ({
             ...prevState,
-            [currentType]: true,
+            [question]: true,
         }));
-
-        // items.forEach((item) => {
-        //     if (item.type === "learning" && location.pathname === "/cbl-toolkit" || location.pathname === "/cbl-toolkit/learning") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: true,
-        //         }))
-        //     } else if (item.type === "aims" && location.pathname === "/cbl-toolkit/aims") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             aims: true,
-        //         }))
-        //     } else if (item.type === "content" && location.pathname === "/cbl-toolkit/content") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             content: true,
-        //         }))
-        //     } else if (item.type === "resources" && location.pathname === "/cbl-toolkit/resources") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             resources: true,
-        //         }))
-        //     } else if (item.type === "activities" && location.pathname === "/cbl-toolkit/activities") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             activities: true,
-        //         }))
-        //     } else if (item.type === "role" && location.pathname === "/cbl-toolkit/role") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             role: true,
-        //         }))
-        //     } else if (item.type === "grouping" && location.pathname === "/cbl-toolkit/group") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             grouping: true,
-        //         }))
-        //     } else if (item.type === "location" && location.pathname === "/cbl-toolkit/location") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             location: true,
-        //         }))
-        //     } else if (item.type === "time" && location.pathname === "/cbl-toolkit/time") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             time: true,
-        //         }))
-        //     } else if (item.type === "assessment" && location.pathname === "/cbl-toolkit/assessment") {
-        //         setIsQuestion(prevState => ({
-        //             ...prevState,
-        //             learning: false,
-        //             assessment: true,
-        //         }))
-        //     }
-        // })
-    }, [items, currentQuestion]);
+    }, [question]);
 
     return (
         <div className="content-box">
