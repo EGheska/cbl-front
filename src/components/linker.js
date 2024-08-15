@@ -23,7 +23,7 @@ const Linker = ({items}) => {
         setisComBLtoRender({combl: false, others: false});
         setisToolkitRender({questionaire: false, result: false});
 
-        if (location.pathname === '/cbl-toolkit') {
+        if (location.pathname === '/cbl-toolkit' || location.pathname.startsWith('/cbl-toolkit/')) {
             setIsFromToolkit(true);
         }
 
@@ -32,7 +32,7 @@ const Linker = ({items}) => {
                 setisComBLtoRender({combl: true, others: false});
             } else if (item.type === "cbl-in-others" && location.pathname === "/cbl-in-others") {
                 setisComBLtoRender({combl: false, others: true});
-            } else if (item.type === "cbl-toolkit" && location.pathname === "/cbl-toolkit") {
+            } else if (item.type === "cbl-toolkit" && (location.pathname === "/cbl-toolkit" || location.pathname.startsWith('/cbl-toolkit/'))) {
                 setisToolkitRender({questionaire: true, result: false});
             } else if (item.type === "cbl-result" && location.pathname === "/cbl/result") {
                 setisToolkitRender({questionaire: false, result: true});

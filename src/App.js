@@ -13,6 +13,16 @@ function App() {
         {type: "cbl-in-others", name: "ComBL in Other Universities"},
         {type: "cbl-toolkit", name: "ComBL Toolkit"},
         {type: "results", name: "Results"},
+        {type: "learning", name: "Learning"},
+        {type: "aims", name: "Aims"},
+        {type: "content", name: "Content"},
+        {type: "activities", name: "Activities"},
+        {type: "role", name: "Role"},
+        {type: "resources", name: "Resources"},
+        {type: "grouping", name: "Grouping"},
+        {type: "location", name: "Location"},
+        {type: "time", name: "Time"},
+        {type: "assesment", name: "Assesment"},
         // {type: "cbl-toolkit", name: "ComBL Toolkit"},
     ]);
     return (

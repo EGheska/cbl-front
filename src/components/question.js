@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-const Question = () => {
+const Question = ({items}) => {
     const [isLearning, setIsLearning] = React.useState(false);
+
+    useEffect(() => {
+        console.log("Items from questions:", items);
+    }, [items]);
 
     return (
         <div className="content-box">

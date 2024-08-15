@@ -3,8 +3,6 @@ import "../styles/navbar.css";
 import {useState} from "react";
 import {useLocation} from "react-router-dom";
 import * as Routes from "../util/const.js";
-// import {Button} from "@mui/material";
-// import UTLogo from "../../public/Assets/UTLogo/utlogo.png";
 
 const NavBar = () => {
 
@@ -12,10 +10,6 @@ const NavBar = () => {
     @hook used for conditionally render the links for the questionaire.
      */
     // const [additionalItems, setAdditionalItems] = useState([]);
-
-    /*
-    @hook used for conditional rendering the nabvbar.
-     */
     const [isNavbarFromQuestion, setIsNavbarFromQuestion] = useState(false);
 
 
@@ -38,20 +32,73 @@ const NavBar = () => {
 
     useEffect(() => {
 
-        if (location.pathname === "/cbl-toolkit" || location.pathname === "/cbl-toolkit/learning") {
-            setIsNavbarFromQuestion(true);
-            setIsVisible(prevState => ({
-                ...prevState,
-                learning: true,
-            }));
-        }
-
         if (location.pathname === "/cbl") {
             setIsVisible(prevState => ({
                 ...prevState,
                 combl: true,
                 spiderweb: false,
                 others: false,
+            }));
+
+        } else if (location.pathname === "/cbl-toolkit/learning" || location.pathname === "/cbl-toolkit") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                learning: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/aims") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                aims: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/content") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                content: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/activities") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                activities: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/role") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                role: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/resources") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                resources: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/group") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                grouping: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/location") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                location: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/time") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                time: true,
+            }));
+        } else if (location.pathname === "/cbl-toolkit/assessment") {
+            setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                assessment: true,
             }));
         } else if (location.pathname === "/about") {
             setIsVisible(prevState => ({
@@ -118,39 +165,75 @@ const NavBar = () => {
                                 <a href={Routes.LEARNING}>Learning</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.aims ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.AIMS}>Aims & Objectives</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.content ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.CONTENT}>Content</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
-                                <a href={Routes.LEARNING}>Learning Activities</a>
+                                {isVisible.activities ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
+                                <a href={Routes.ACTIVITIES}>Learning Activities</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.role ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.ROLE}>Teaching Role</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
-                                <a href={Routes.RESULT}>Materials & Resources</a>
+                                {isVisible.resources ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
+                                <a href={Routes.RESOURCES}>Materials & Resources</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.grouping ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.GROUP}>Grouping</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.location ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.LOCATION}>Location</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.time ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.TIME}>Time</a>
                             </div>
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
+                                {isVisible.assessment ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
                                 <a href={Routes.ASSESSMENT}>Assesment</a>
                             </div>
                         </div>
