@@ -22,7 +22,7 @@ function App() {
         {type: "grouping", name: "Grouping"},
         {type: "location", name: "Location"},
         {type: "time", name: "Time"},
-        {type: "assesment", name: "Assesment"},
+        {type: "assessment", name: "Assessment"},
         // {type: "cbl-toolkit", name: "ComBL Toolkit"},
     ]);
     return (
