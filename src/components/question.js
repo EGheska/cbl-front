@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {useLocation} from "react-router-dom";
 
 const Question = ({question}) => {
-    const [isQuestion, setIsQuestion] = React.useState({
+    const [isQuestion, setIsQuestion] = useState({
         learning: false,
         aims: false,
         content: false,
@@ -14,10 +13,6 @@ const Question = ({question}) => {
         time: false,
         assesment: false,
     });
-    const location = useLocation();
-
-    const data = ['learning', 'aims', 'content', 'activities', 'role', 'resources', 'grouping', 'location', 'time', 'assessment'];
-
 
     useEffect(() => {
 
