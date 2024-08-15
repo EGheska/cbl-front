@@ -32,7 +32,8 @@ export const routes = [
         Component: CBLToolkit
     },
     {
-      path: Routes.LEARNING,
+        path: Routes.LEARNING,
+        Component: CBLToolkit
     },
     {
         path: Routes.AIMS,
@@ -53,15 +54,15 @@ export const routes = [
         path: Routes.ROLE,
     },
     {
-      path: Routes.LOCATION,
+        path: Routes.LOCATION,
     },
     {
-      path: Routes.ASSESSMENT,
+        path: Routes.ASSESSMENT,
     },
     {
         path: Routes.TIME,
     },
     {
-        path:Routes.RESULT,
+        path: Routes.RESULT,
     },
 ];

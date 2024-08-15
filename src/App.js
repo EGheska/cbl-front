@@ -20,8 +20,8 @@ function App() {
             <div className="App">
                 <Layout items={items}/>
                 <Routes>
-                    {routes.map(({path, Component}) => (
-                        <Route key={path} path={path} element={<Component items={items}/>}/>
+                    {routes.map(({path, Component}, index) => (
+                        <Route key={index} path={path} element={<Component items={items}/>}/>
                     ))}
                 </Routes>
             </div>

@@ -23,13 +23,27 @@ const NavBar = () => {
         spiderweb: false,
         combl: false,
         others: false,
+        learning: false,
+        aims: false,
+        content: false,
+        activities: false,
+        role: false,
+        resources: false,
+        grouping: false,
+        location: false,
+        time: false,
+        assessment: false,
     });
     const location = useLocation();
 
     useEffect(() => {
 
-        if (location.pathname === "/cbl-toolkit") {
+        if (location.pathname === "/cbl-toolkit" || location.pathname === "/cbl-toolkit/learning") {
             setIsNavbarFromQuestion(true);
+            setIsVisible(prevState => ({
+                ...prevState,
+                learning: true,
+            }));
         }
 
         if (location.pathname === "/cbl") {
@@ -96,8 +110,12 @@ const NavBar = () => {
                     <div className="additional-div">
                         <div className="items-list">
                             <div className="item">
-                                <span className="navbar-span">&#x25E6;</span>
-                                <a href={Routes.LEARNING}>Learning Rationale</a>
+                                {isVisible.learning ? (
+                                    <span className="navbar-span">&#x2022;</span>
+                                ) : (
+                                    <span className="navbar-span">&#x25E6;</span>
+                                )}
+                                <a href={Routes.LEARNING}>Learning</a>
                             </div>
                             <div className="item">
                                 <span className="navbar-span">&#x25E6;</span>
@@ -141,7 +159,7 @@ const NavBar = () => {
                     <div className="additional-div">
                         <div className="items-list">
                             <div className="item">
-                            {isVisible.spiderweb && (
+                                {isVisible.spiderweb && (
                                     <span className="navbar-span">&#x2022;</span>
                                 )}
                                 {!isVisible.spiderweb && (
