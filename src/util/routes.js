@@ -31,4 +31,37 @@ export const routes = [
         path: Routes.CBL_TOOLKIT,
         Component: CBLToolkit
     },
-]; 
+    {
+      path: Routes.LEARNING,
+    },
+    {
+        path: Routes.AIMS,
+    },
+    {
+        path: Routes.CONTENT,
+    },
+    {
+        path: Routes.ACTIVITIES,
+    },
+    {
+        path: Routes.RESOURCES,
+    },
+    {
+        path: Routes.GROUP,
+    },
+    {
+        path: Routes.ROLE,
+    },
+    {
+      path: Routes.LOCATION,
+    },
+    {
+      path: Routes.ASSESSMENT,
+    },
+    {
+        path: Routes.TIME,
+    },
+    {
+        path:Routes.RESULT,
+    },
+];

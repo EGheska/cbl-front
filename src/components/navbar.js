@@ -2,7 +2,8 @@ import React, {useEffect} from "react";
 import "../styles/navbar.css";
 import {useState} from "react";
 import {useLocation} from "react-router-dom";
-import {Button} from "@mui/material";
+import * as Routes from "../util/const.js";
+// import {Button} from "@mui/material";
 // import UTLogo from "../../public/Assets/UTLogo/utlogo.png";
 
 const NavBar = () => {
@@ -93,13 +94,54 @@ const NavBar = () => {
 
                 {isNavbarFromQuestion ? (
                     <div className="additional-div">
-                        <div className="items-list"></div>
+                        <div className="items-list">
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.LEARNING}>Learning Rationale</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.AIMS}>Aims & Objectives</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.CONTENT}>Content</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.LEARNING}>Learning Activities</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.ROLE}>Teaching Role</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.RESULT}>Materials & Resources</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.GROUP}>Grouping</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.LOCATION}>Location</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.TIME}>Time</a>
+                            </div>
+                            <div className="item">
+                                <span className="navbar-span">&#x25E6;</span>
+                                <a href={Routes.ASSESSMENT}>Assesment</a>
+                            </div>
+                        </div>
                     </div>
                 ) : (
                     <div className="additional-div">
                         <div className="items-list">
                             <div className="item">
-                                {isVisible.spiderweb && (
+                            {isVisible.spiderweb && (
                                     <span className="navbar-span">&#x2022;</span>
                                 )}
                                 {!isVisible.spiderweb && (
