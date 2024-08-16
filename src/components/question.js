@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 import "../styles/question.css";
+import {useLocation} from "react-router-dom";
 
 const Question = ({question}) => {
+    const location = useLocation();
     const [isQuestion, setIsQuestion] = useState({
         learning: false,
         aims: false,
@@ -14,8 +16,35 @@ const Question = ({question}) => {
         time: false,
         assesment: false,
     });
+    const [number, setNumber] = useState(0);
+
+    const changeNumber = (param)=>{
+        if (location.pathname.endsWith("/learning")){
+            setNumber(1);
+        } else if (location.pathname.endsWith("/aims")){
+            setNumber(2);
+        } else if (location.pathname.endsWith("/content")){
+            setNumber(3);
+        } else if (location.pathname.endsWith("/activities")){
+            setNumber(4);
+        } else if (location.pathname.endsWith("/role")){
+            setNumber(5);
+        } else if (location.pathname.endsWith("/resources")){
+            setNumber(6);
+        } else if (location.pathname.endsWith("/group")){
+            setNumber(7);
+        } else if (location.pathname.endsWith("/location")){
+            setNumber(8);
+        } else if (location.pathname.endsWith("/time")) {
+            setNumber(9);
+        } else if (location.pathname.endsWith("/assessment")){
+            setNumber(10);
+        }
+    }
 
     useEffect(() => {
+        changeNumber(number)
+        console.log(number);
 
         setIsQuestion({
             learning: false,
@@ -188,7 +217,9 @@ const Question = ({question}) => {
             )}
             <div className="number-container">
                 <div className="number-box">
-
+                    {number && (
+                        <span>{number}/10</span>
+                    )}
                 </div>
             </div>
         </div>

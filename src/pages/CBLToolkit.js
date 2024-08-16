@@ -4,15 +4,19 @@ import {Button} from "@mui/material";
 import Question from "../components/question";
 import * as Routes from "../util/const.js";
 import {useLocation, useNavigate} from "react-router-dom";
-
+import "../styles/CBLTooltip.css";
 
 const CBLToolkit = ({items}) => {
+    const [isFinal, setisFinal] = useState(false);
     const [questionData, setQuestionData] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const location = useLocation();
     const navigate = useNavigate();
 
     useEffect(() => {
+        if (location.pathname.endsWith("/assessment")){
+            setisFinal(true);
+        }
         const questionTypes = [
             "learning",
             "aims",
@@ -79,8 +83,25 @@ const CBLToolkit = ({items}) => {
             <div className="questionaire-footer">
                 <Button variant="contained"
                         onClick={handleNextQuestion}
+                        sx={{
+                            backgroundColor: "#FFFFFFFF",
+                            color: "#000000",
+                            // marginLeft: "40%",
+                            width: "213px",
+                            height: "38px",
+                            borderRadius: "10px",
+                            fontSize: "20px",
+                            fontFamily: 'Univers',
+                            boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                            '&:hover': {
+                                backgroundColor: "#FFFFFFFF",
+
+                            },
+                            marginBottom: "5%",
+                            marginTop: "2%",
+                        }}
                 >
-                    Next
+                    {isFinal ? "Submit" : "Next"}
                 </Button>
             </div>
         </div>
