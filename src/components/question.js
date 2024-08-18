@@ -66,7 +66,7 @@ const Question = ({question}) => {
     }, [question]);
 
     return (
-        <div className="content-box">
+        <div className="content-box-question-container">
             <div className="header-box">
                 <div className="header-row">
                     {isQuestion.learning && (
@@ -109,7 +109,7 @@ const Question = ({question}) => {
                         <p className="subquestion">Towards which goal are they learning?</p>
                     )}
                     {isQuestion.content && (
-                        <p className="subquestion">What is the content they are learnin?</p>
+                        <p className="subquestion">What is the content they are learning?</p>
                     )}
                     {isQuestion.activities && (
                         <p className="subquestion">What are the activities they follow?</p>

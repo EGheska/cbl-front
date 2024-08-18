@@ -3,6 +3,7 @@
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     margin-left: 15%;
+    /*max-height: 687px;*/
 }
 
 .pageClass-toolkit {
@@ -16,5 +17,9 @@
 
 .questionaire-footer {
     margin-left: 15%
+}
+
+.question-container {
+    max-height: 667px;
 }
 

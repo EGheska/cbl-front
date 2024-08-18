@@ -14,7 +14,7 @@ const CBLToolkit = ({items}) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (location.pathname.endsWith("/assessment")){
+        if (location.pathname.endsWith("/assessment")) {
             setisFinal(true);
         }
         const questionTypes = [
@@ -50,6 +50,27 @@ const CBLToolkit = ({items}) => {
         }
     }, [location.pathname]);
 
+    const handlePrevQuestion = () => {
+        const prevIndex = currentQuestionIndex - 1;
+        if (prevIndex >= 0) {
+            setCurrentQuestionIndex(prevIndex);
+
+            const routeMap = [
+                Routes.LEARNING,
+                Routes.AIMS,
+                Routes.CONTENT,
+                Routes.ACTIVITIES,
+                Routes.ROLE,
+                Routes.RESOURCES,
+                Routes.GROUP,
+                Routes.LOCATION,
+                Routes.TIME,
+                Routes.ASSESSMENT,
+            ];
+            navigate(routeMap[prevIndex]);
+        }
+    }
+
     const handleNextQuestion = () => {
         const nextIndex = currentQuestionIndex + 1;
         if (nextIndex < questionData.length) {
@@ -82,13 +103,34 @@ const CBLToolkit = ({items}) => {
             </div>
             <div className="questionaire-footer">
                 <Button variant="contained"
+                        onClick={handlePrevQuestion}
+                    sx={{
+                    backgroundColor: "#FFFFFFFF",
+                    color: "#000000",
+                    // marginLeft: "40%",
+                    width: "200px",
+                    height: "50px",
+                    borderRadius: "10px",
+                    fontSize: "20px",
+                    fontFamily: 'Univers',
+                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                    '&:hover': {
+                        backgroundColor: "#FFFFFFFF",
+                    },
+                    marginBottom: "5%",
+                    marginRight: "16px",
+                    marginTop: "21px",
+                }}>
+                    Previous
+                </Button>
+                <Button variant="contained"
                         onClick={handleNextQuestion}
                         sx={{
                             backgroundColor: "#FFFFFFFF",
                             color: "#000000",
                             // marginLeft: "40%",
-                            width: "213px",
-                            height: "38px",
+                            width: "200px",
+                            height: "50px",
                             borderRadius: "10px",
                             fontSize: "20px",
                             fontFamily: 'Univers',
@@ -97,7 +139,7 @@ const CBLToolkit = ({items}) => {
                                 backgroundColor: "#FFFFFFFF",
                             },
                             marginBottom: "5%",
-                            marginTop: "2%",
+                            marginTop: "21px",
                         }}
                 >
                     {isFinal ? "Submit" : "Next"}
