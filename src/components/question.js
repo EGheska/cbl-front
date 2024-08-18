@@ -20,7 +20,7 @@ const Question = ({question}) => {
         grouping: false,
         location: false,
         time: false,
-        assesment: false,
+        assessment: false,
     });
     const [number, setNumber] = useState(0);
 
@@ -177,90 +177,265 @@ const Question = ({question}) => {
                         className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
                          onClick={() => handleQuestionClick(1)}
                     >
-
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.
                     </div>
                     <div
                         className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
                          onClick={() => handleQuestionClick(2)}
                     >
-
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
                     </div>
                     <div
                         className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
                          onClick={() => handleQuestionClick(3)}
                     >
-
+                        Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.
                     </div>
                     <div
                         className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
                          onClick={() => handleQuestionClick(4)}
                     >
-
+                        Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
                     </div>
                 </div>
             )}
             {isQuestion.content && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.activities && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.role && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.resources && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a
+                        project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked
+                        problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical
+                        thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.grouping && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a
+                        project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked
+                        problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical
+                        thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.location && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a
+                        project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked
+                        problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical
+                        thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.time && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a
+                        project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked
+                        problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical
+                        thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
-            {isQuestion.assesment && (
+            {isQuestion.assessment && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a
+                        project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked
+                        problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical
+                        thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             <div className="number-container">

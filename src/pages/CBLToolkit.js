@@ -14,6 +14,7 @@ const CBLToolkit = ({items}) => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        setisFinal(false);
         if (location.pathname.endsWith("/assessment")) {
             setisFinal(true);
         }
@@ -90,6 +91,10 @@ const CBLToolkit = ({items}) => {
             ];
             navigate(routeMap[nextIndex]);
         }
+
+        if(nextIndex === questionData.length) {
+            navigate(Routes.RESULT);
+        }
     };
 
     return (
@@ -126,7 +131,7 @@ const CBLToolkit = ({items}) => {
                 <Button variant="contained"
                         onClick={handleNextQuestion}
                         sx={{
-                            backgroundColor: "#FFFFFFFF",
+                            backgroundColor: isFinal ? "#CEFFA7" : "#FFFFFFFF",
                             color: "#000000",
                             // marginLeft: "40%",
                             width: "200px",
@@ -136,7 +141,7 @@ const CBLToolkit = ({items}) => {
                             fontFamily: 'Univers',
                             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                             '&:hover': {
-                                backgroundColor: "#FFFFFFFF",
+                                backgroundColor: isFinal ? "#CEFFA7" : "#FFFFFFFF",
                             },
                             marginBottom: "5%",
                             marginTop: "21px",
