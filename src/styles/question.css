@@ -93,6 +93,12 @@
     color: rgba(0, 0, 0, 1);
 }
 
+.content-box-question.selected {
+    background-color: #e0f7fa;
+    border-color: #00796b;
+    font-weight: bold;
+}
+
 .number-container {
     display: flex;
     width: 100%;

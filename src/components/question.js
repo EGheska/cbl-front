@@ -4,6 +4,12 @@ import {useLocation} from "react-router-dom";
 
 const Question = ({question}) => {
     const location = useLocation();
+    const [selectedQuestion, setSelectedQuestion] = useState(null);
+
+    const handleQuestionClick = (questionKey) => {
+        setSelectedQuestion(questionKey);
+    }
+
     const [isQuestion, setIsQuestion] = useState({
         learning: false,
         aims: false,
@@ -43,8 +49,10 @@ const Question = ({question}) => {
     }
 
     useEffect(() => {
+        setSelectedQuestion(null);
         changeNumber(number)
-        console.log(number);
+        //console.log(number);
+        console.warn("Question: ", selectedQuestion);
 
         setIsQuestion({
             learning: false,
@@ -137,18 +145,58 @@ const Question = ({question}) => {
             </div>
             {isQuestion.learning && (
                 <div className="question-container">
-                    <div className="content-box-question">Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.</div>
-                    <div className="content-box-question">Students learn to solve a pre-defined ill-structured hypothetical case scenario.</div>
-                    <div className="content-box-question">Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.</div>
-                    <div className="content-box-question">Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.</div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(1)}
+                    >
+                        Students learn to solve a pre-defined problem by answering a driving question that embodies a project's goal.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(2)}
+                    >
+                        Students learn to solve a pre-defined ill-structured hypothetical case scenario.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(3)}
+                    >
+                        Students learn to interact in and have an active immediate impact on the real world and wicked problems by designing solutions for actionable challenges of personal choice and relevance.
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                        onClick={() => handleQuestionClick(4)}
+                    >
+                        Students engage by applying theory to real-world and community problems, fostering critical thinking, problem-solving, and teamwork for a deeper, more meaningful learning experience.
+                    </div>
                 </div>
             )}
             {isQuestion.aims && (
                 <div className="question-container">
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
-                    <div className="content-box-question"></div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 1 ? 'selected' : ''}`}
+                         onClick={() => handleQuestionClick(1)}
+                    >
+
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 2 ? 'selected' : ''}`}
+                         onClick={() => handleQuestionClick(2)}
+                    >
+
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 3 ? 'selected' : ''}`}
+                         onClick={() => handleQuestionClick(3)}
+                    >
+
+                    </div>
+                    <div
+                        className={`content-box-question ${selectedQuestion === 4 ? 'selected' : ''}`}
+                         onClick={() => handleQuestionClick(4)}
+                    >
+
+                    </div>
                 </div>
             )}
             {isQuestion.content && (
