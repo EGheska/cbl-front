@@ -72,7 +72,7 @@ const CBLToolkit = ({items}) => {
     };
 
     return (
-        <div className="pageClass">
+        <div className="pageClass-toolkit">
             <Linker items={items}/>
             <div className="questionaire-container">
                 <div className="content-box-header">Community-Based Learning Helper</div>
@@ -95,7 +95,6 @@ const CBLToolkit = ({items}) => {
                             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                             '&:hover': {
                                 backgroundColor: "#FFFFFFFF",
-
                             },
                             marginBottom: "5%",
                             marginTop: "2%",

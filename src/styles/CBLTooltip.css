@@ -5,6 +5,15 @@
     margin-left: 15%;
 }
 
+.pageClass-toolkit {
+    background-image: url("../../public/Assets/Background/Picture1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
 .questionaire-footer {
     margin-left: 15%
 }
