@@ -6,6 +6,7 @@ import CBLPage from "../pages/CBLPage.js";
 import Others from "../pages/others.js";
 import CBLToolkit from "../pages/CBLToolkit.js";
 import Result from "../pages/result";
+import Advice from "../pages/advice";
 
 export const routes = [
     {
@@ -76,4 +77,8 @@ export const routes = [
         path: Routes.RESULT,
         Component: Result
     },
+    {
+        path: Routes.ADVICE,
+        Component: Advice
+    }
 ];

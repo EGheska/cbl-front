@@ -16,3 +16,5 @@ export const LOCATION = '/cbl-toolkit/location';
 export const TIME = '/cbl-toolkit/time';
 export const ASSESSMENT = '/cbl-toolkit/assessment';
 export const RESULT = '/cbl-toolkit/result';
+
+export const ADVICE = '/cbl-toolkit/advice';

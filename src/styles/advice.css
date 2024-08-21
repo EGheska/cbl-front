@@ -1,0 +1,32 @@
+.pageClass-advice {
+    background-image: url("../../public/Assets/Background/Picture1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    /*flex-direction: row;*/
+    /*min-height: 60%;*/
+}
+
+.advice-navbar {
+    display: flex;
+    /*width: 254px;*/
+    /*flex-direction: column;*/
+    /*flex: 6;*/
+    box-sizing: border-box;
+    /*background-color: #1F2229;*/
+    height: 100%;
+    position: fixed;
+    width: 269px;
+    /*display: flex;*/
+    justify-content: center;
+    /*color: #FFFFFF;*/
+    /*box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);*/
+
+}
+.advice-content {
+    flex-grow: 1;
+    box-sizing: border-box;
+    /*flex-direction: column;*/
+}

@@ -5,7 +5,7 @@ import NavBar from './navbar';
 
 const Layout = ({items}) => {
     const location = useLocation();
-    const headerBarRoutes = ["/", "/start", "/cbl-toolkit/result"];
+    const headerBarRoutes = ["/", "/start", "/cbl-toolkit/result", "/cbl-toolkit/advice"];
     const isHeaderBar = headerBarRoutes.includes(location.pathname);
 
     return (
