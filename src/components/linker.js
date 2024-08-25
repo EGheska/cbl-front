@@ -43,20 +43,22 @@ const Linker = ({items}) => {
 
     return (
         <div className="linker">
-            <Button
-                onClick={() => window.location.href = "/start"}
-                variant="text"
-                sx={{
-                    color: "#5A5A5A",
-                    fontSize: "20px",
-                    fontFamily: 'UniversBold',
-                    '&:hover': {
-                        color: "#FFFFFF",
-                    },
-                }}
-            >
-                HOME
-            </Button>
+            {/*<Button*/}
+            {/*    onClick={() => window.location.href = "/start"}*/}
+            {/*    variant="text"*/}
+            {/*    sx={{*/}
+            {/*        color: "#5A5A5A",*/}
+            {/*        fontSize: "20px",*/}
+            {/*        fontFamily: 'UniversBold',*/}
+            {/*        '&:hover': {*/}
+            {/*            color: "#FFFFFF",*/}
+            {/*        },*/}
+            {/*    }}*/}
+            {/*>*/}
+            <div className="linker-home">
+            HOME
+            </div>
+            {/*</Button>*/}
             <div className="linker-img">
                 <img src="/Assets/Vector.svg" alt="Arrow"/>
             </div>

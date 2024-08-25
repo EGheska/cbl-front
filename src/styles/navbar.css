@@ -8,6 +8,17 @@ a {
     color: white;
 }
 
+.emptyLine-asd {
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: white;
+    /*z-index: 1;*/
+}
+
 .navbar {
     background-color: #1F2229;
     height: 100%;
@@ -21,9 +32,14 @@ a {
 
 .about-div {
     width: 214px;
-    height: 108px;
+    height: 70px;
     display: flex;
+    font-family: UniversBold;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 25px;
 }
+
 
 .line-div {
     width: 220px;
@@ -35,15 +51,17 @@ a {
 .navbar-footer {
     position: absolute;
     bottom: 0;
-    margin-left: 10%;
-    height: 50px;
+    /*margin-left: 10%;*/
+    height: 100px;
+    width: 90%;
     background-color: #1F2229;
     display: flex;
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
+
     left: 0;
-    font-family: 'UniversHeaders', serif;
-    font-size: 28px;
-    margin-bottom: 5%;
+    /*font-family: 'UniversHeaders', serif;*/
+    /*font-size: 28px;*/
+    /*margin-bottom: 5%;*/
 }
 
 .additional-div {

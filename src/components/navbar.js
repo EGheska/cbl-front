@@ -97,7 +97,8 @@ const NavBar = () => {
         <div className="navbar">
             <nav className="navbar-bar">
                 <div className="about-div">
-                    <img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>
+                    UT ComBL Toolkit
+                    {/*<img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>*/}
                 </div>
                 <div className="line-div">
                 </div>
@@ -228,29 +229,14 @@ const NavBar = () => {
                         </div>
                     </div>
                 )}
-
-                {/*{additionalItems.length > 0 && (*/}
-                {/*    <div className="additional-div">*/}
-                {/*        */}
-                {/*        {additionalItems.map((item) => (*/}
-                {/*            <li className="items-list">*/}
-                {/*                <a style={{ */}
-                {/*                    color: "white", textDecoration: 'none'*/}
-                {/*                }} */}
-                {/*                href={*/}
-                {/*                    item.name === "Community-Based Learning" ? "#" : "/about"*/}
-                {/*                }>*/}
-                {/*                <span style={{fontSize: '20px'}}>&#x25E6;</span> {item.name}*/}
-                {/*                </a>*/}
-                {/*            </li>*/}
-                {/*        ))}*/}
-                {/*        */}
-                {/*    </div>*/}
-                {/*)}*/}
+                <div className="emptyLine-asd"></div>
+                <div>
+                    <a href="/start">Home</a>
+                </div>
             </nav>
             <div className="navbar-footer">
-                UT ComBL Toolkit
-                {/*<img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>*/}
+                {/*UT ComBL Toolkit*/}
+                <img src="/Assets/UTLogo/logo_navbar.png" alt="UTLogo"/>
             </div>
         </div>
     );

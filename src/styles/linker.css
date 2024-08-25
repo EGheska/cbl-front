@@ -37,3 +37,10 @@
     font-weight: 500;
     transition: all 0.3s;
 }
+.linker-home {
+    font-size: 20px;
+    font-family: UniversBold;
+    color: #5A5A5A;
+    margin-left: 10px;
+    margin-right: 10px;
+}
