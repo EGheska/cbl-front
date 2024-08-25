@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cbl-front/static/css/main.d6e1e837.css",
+    "main.js": "/cbl-front/static/js/main.f26859a0.js",
+    "static/js/453.a2761d16.chunk.js": "/cbl-front/static/js/453.a2761d16.chunk.js",
+    "static/media/Picture2.png": "/cbl-front/static/media/Picture2.609ad9c2da7a4a78b10d.png",
+    "static/media/Picture4.png": "/cbl-front/static/media/Picture4.9d46c7e24b784713155c.png",
+    "static/media/Picture3.png": "/cbl-front/static/media/Picture3.984254f44f96bdebd054.png",
+    "static/media/Picture1.png": "/cbl-front/static/media/Picture1.95201dc1ecff209f2d41.png",
+    "static/media/Linotype_Univers_330_Light_2abb.ttf": "/cbl-front/static/media/Linotype_Univers_330_Light_229790e6f7c56ae5de7a50a0e9404f0a2abb.6d3efccc821e62a15975.ttf",
+    "static/media/Linotype_Univers_620_Bold_Condensed_ttf": "/cbl-front/static/media/Linotype_Univers_620_Bold_Condensed_d9ea7654280f13fbebc7f6dfe06.e22b042874f9ba09be03.ttf",
+    "index.html": "/cbl-front/index.html",
+    "main.d6e1e837.css.map": "/cbl-front/static/css/main.d6e1e837.css.map",
+    "main.f26859a0.js.map": "/cbl-front/static/js/main.f26859a0.js.map",
+    "453.a2761d16.chunk.js.map": "/cbl-front/static/js/453.a2761d16.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6e1e837.css",
+    "static/js/main.f26859a0.js"
+  ]
+}
